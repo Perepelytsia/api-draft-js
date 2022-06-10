@@ -9,7 +9,7 @@ const HOST = 'localhost';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.json({ username: 'Flavio' });
 });
 
 app.listen(PORT, HOST);
